@@ -1,0 +1,5 @@
+@function create-spacer-map()
+    $spacers: ()
+    @for $level from $min-spacer-level to ($max-spacer-level + 1)
+        $spacers: map-merge( ($level: ( $spacer * $level ))  , $spacers )
+    @return $spacers
