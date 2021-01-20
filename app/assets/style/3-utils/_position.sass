@@ -1,5 +1,0 @@
-@each $infix, $breakpoints in $grid-breakpoints
-    @include rwd($breakpoints)
-        @each $position in $positions
-            .position-#{$infix}-#{$position}
-                position: $position !important
