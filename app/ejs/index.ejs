@@ -17,7 +17,23 @@
 	
 	<%- include('component/header.ejs') %>
 
-	<%- contents %>
+	<div class="contact text-white py-20 bg-full" style="background-image: url('assets/images/contact.jpg');">
+		<div class="container">
+			<h2 class="mb-4">
+				想收到最新消息嗎？<br>快訂閱我們！
+			</h2>
+			<div class="row no-gutters">
+				<div class="col-6">
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="請輸入您的電子信箱">
+						<div class="input-group-prepend w-25 bg-primary rounded-right">
+							<button class="btn w-100 text-white font-weight-bold" type="button" id="submit">送出</button>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<%- include('component/footer.ejs') %>
 
