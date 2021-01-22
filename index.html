@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-Hans-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>尚紘自動化</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>尚紘自動化</title>
 
-  <!-- Material Icon -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/style/all.css">
+	<!-- Material Icon -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
 	
-	<div class="container">
+	<div class="container sticky-top bg-white bg-transparent-50">
     <nav class="navbar navbar-expand-md">
         <h1>
             <a class="navbar-brand d-flex align-items-center fz-8 font-weight-bold" href="#">
                 <img class="mr-2" src="assets/images/logo.svg" alt="尚紘自動化" style="width: 48px; height: 48px;">
-                尚紘自動化
+                尚紘自動化有限公司
             </a>
         </h1>
         
@@ -29,17 +28,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item ml-4">
                     <a class="nav-link" href="#">首頁</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ml-4">
                     <a class="nav-link" href="#">關於</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">常見問題</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">聯繫我們</a>
+                <li class="nav-item ml-4">
+                    <a class="nav-link" href="#contact">聯絡資訊</a>
                 </li>
             </ul>
         </div>
@@ -47,31 +43,59 @@
 </div>
 
 
-	<div class="contact text-white py-20 bg-full" style="background-image: url('assets/images/contact.jpg');">
-		<div class="container">
-			<h2 class="mb-4">
-				想收到最新消息嗎？<br>快訂閱我們！
-			</h2>
-			<div class="row no-gutters">
-				<div class="col-6">
-					<div class="input-group mb-3">
-						<input type="text" class="form-control" placeholder="請輸入您的電子信箱">
-						<div class="input-group-prepend w-25 bg-primary rounded-right">
-							<button class="btn w-100 text-white font-weight-bold" type="button" id="submit">送出</button>
-					  </div>
-					</div>
-				</div>
+	<div class="container vh-50">
+		<div id="carouselExampleFade" class="carousel slide carousel-fade h-100" data-ride="carousel">
+			<div class="carousel-inner h-100">
+			  <div class="carousel-item h-100 active">
+				<img src="assets/images/screw-1.jpg" class="d-block w-100 bg-full" alt="...">
+			  </div>
+			  <div class="carousel-item h-100">
+				<img src="assets/images/screw-2.jpg" class="d-block w-100 bg-full" alt="...">
+			  </div>
+			  <div class="carousel-item h-100">
+				<img src="assets/images/tool-2.jpg" class="d-block w-100 bg-full" alt="...">
+			  </div>
 			</div>
+			<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
 		</div>
 	</div>
 
-	<footer class="py-6">
-    <div class="container d-flex">
-        <a href="index.html" class="fz-5 font-weight-bold d-flex align-items-center">
-            尚紘自動化
-            <small class="">© 2020. All Rights Reserved.</small>
-        </a>
-        <ul class="nav align-items-center font-weight-bold ml-auto">
+
+	<div class="container py-10" id="contact">
+		<h2 class="font-weight-bold mb-6 text-center">聯絡資訊</h2>
+		<div class="d-flex">
+			<div class="w-50">
+				<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.5538792846738!2d120.65699769580544!3d24.234239857718375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917c1b9d9c369%3A0xb30afdabe4c6e9cf!2zNDI45Y-w5Lit5biC5aSn6ZuF5Y2A56We5p6X6Lev5LiA5q61MTcw5be3MzjomZ8!5e0!3m2!1szh-TW!2stw!4v1611293434206!5m2!1szh-TW!2stw" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<ul class="list-unstyled px-6">
+				<li class="d-flex mb-4">
+					地址:<address class="mb-0 ml-2">428台中市大雅區神林路一段170巷38-3號</address>
+				</li>
+				<li class="d-flex mb-4">
+					電話:<a class="ml-2" href="tel:+0425603957">04-25603957</a>
+				</li>
+				<li class="d-flex mb-4">
+					傳真:<a class="ml-2" href="tel:+0425603957">04-25603957</a>
+				</li>
+				<li class="d-flex mb-4">
+					電子郵件:<a class="ml-2" href="mailto:develop.mall@msa.hinet.net">develop.mall@msa.hinet.net</a>
+				</li>
+			</ul>
+		</div>
+
+		
+	</div>
+
+	<footer class="py-2 text-white bg-primary">
+    <div class="container d-flex align-items-center">
+        <ul class="nav align-items-center mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#">首頁</a>
             </li>
@@ -79,12 +103,13 @@
                 <a class="nav-link" href="#">關於</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">常見問題</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">聯繫我們</a>
+                <a class="nav-link" href="#">聯絡資訊</a>
             </li>
         </ul>
+        <p class="fz-4 d-flex align-items-center mb-0">
+            尚紘自動化有限公司
+            <small class="ml-2">© 2020. All Rights Reserved.</small>
+        </p>
     </div>
 
 </footer>
