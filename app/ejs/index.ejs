@@ -16,54 +16,99 @@
 	
 	<%- include('component/header.ejs') %>
 
-	<div class="container vh-50">
-		<div id="carouselExampleFade" class="carousel slide carousel-fade h-100" data-ride="carousel">
-			<div class="carousel-inner h-100">
-			  <div class="carousel-item h-100 active">
-				<img src="assets/images/screw-1.jpg" class="d-block w-100 bg-full" alt="...">
-			  </div>
-			  <div class="carousel-item h-100">
-				<img src="assets/images/screw-2.jpg" class="d-block w-100 bg-full" alt="...">
-			  </div>
-			  <div class="carousel-item h-100">
-				<img src="assets/images/tool-2.jpg" class="d-block w-100 bg-full" alt="...">
-			  </div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			  <span class="sr-only">Next</span>
-			</a>
+	
+
+	<div class="product bg-full">
+		<div class="container d-flex flex-column">
+			<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">產品分類</h2>
+			<ul class="list-unstyled row text-center fz-5 font-weight-bold">
+				<li class="col-6 col-lg-4 mb-4">
+					<a href="">
+						<figure>
+							<div class="product-img bg-full mb-2" style="background-image: url('assets/images/products/product-2.png');"></div>
+							<figcaption>電子產業</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="col-6 col-lg-4 mb-4">
+					<a href="">
+						<figure>
+							<div class="product-img bg-full mb-2" style="background-image: url('assets/images/products/product-4.png');"></div>
+							<figcaption>印刷產業</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="col-6 col-lg-4 mb-4">
+					<a href="">
+						<figure>
+							<div class="product-img bg-full mb-2" style="background-image: url('assets/images/products/product-6.png');"></div>
+							<figcaption>汽車產業</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="col-6 col-lg-4 mb-4">
+					<a href="">
+						<figure>
+							<div class="product-img bg-full mb-2" style="background-image: url('assets/images/products/product-7.png');"></div>
+							<figcaption>自行車產業</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="col-6 col-lg-4 mb-4">
+					<a href="">
+						<figure>
+							<div class="product-img bg-full mb-2" style="background-image: url('assets/images/products/product-8.png');"></div>
+							<figcaption>包裝產業</figcaption>
+						</figure>
+					</a>
+				</li>
+				<li class="col-6 col-lg-4 mb-4">
+					<a href="">
+						<figure>
+							<div class="product-img bg-full mb-2" style="background-image: url('assets/images/products/product-11.png');"></div>
+							<figcaption>輪胎產業</figcaption>
+						</figure>
+					</a>
+				</li>
+			</ul>
+			<a href="product.html" class="btn btn-primary fz-5 px-4 py-2 ml-auto align-self-end">查看更多</a>
 		</div>
 	</div>
 
-
 	<div class="container py-10" id="contact">
-		<h2 class="font-weight-bold mb-6 text-center">聯絡資訊</h2>
-		<div class="d-flex">
-			<div class="w-50">
-				<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.5538792846738!2d120.65699769580544!3d24.234239857718375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917c1b9d9c369%3A0xb30afdabe4c6e9cf!2zNDI45Y-w5Lit5biC5aSn6ZuF5Y2A56We5p6X6Lev5LiA5q61MTcw5be3MzjomZ8!5e0!3m2!1szh-TW!2stw!4v1611293434206!5m2!1szh-TW!2stw" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-			</div>
-			<ul class="list-unstyled px-6">
-				<li class="d-flex mb-4">
-					地址:<address class="mb-0 ml-2">428台中市大雅區神林路一段170巷38-3號</address>
-				</li>
-				<li class="d-flex mb-4">
-					電話:<a class="ml-2" href="tel:+0425603957">04-25603957</a>
-				</li>
-				<li class="d-flex mb-4">
-					傳真:<a class="ml-2" href="tel:+0425603957">04-25603957</a>
-				</li>
-				<li class="d-flex mb-4">
-					電子郵件:<a class="ml-2" href="mailto:develop.mall@msa.hinet.net">develop.mall@msa.hinet.net</a>
-				</li>
-			</ul>
-		</div>
+		<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">聯絡資訊</h2>
+		<ul class="list-unstyled row fz-5 text-center">
+			<li class="col-sm-6 col-xl-4 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">place</span>
+					地址
+				</h3>
+				<address class="mb-0">台中市大雅區神林路一段38-3號</address>
+			</li>
+			<li class="col-sm-6 col-xl-2 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">phone</span>
+					電話
+				</h3>
+				<a href="tel:+886-4-25603957">04-25603957</a>
+			</li>
+			<li class="col-sm-6 col-xl-2 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">print</span>
+					傳真
+				</h3>
+				<a href="tel:+886-4-25603957">04-25603957</a>
+			</li>
+			<li class="col-sm-6 col-xl-4 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">mail</span>
+					電子郵件
+				</h3>
+				<a href="mailto:develop.mall@msa.hinet.net">develop.mall@msa.hinet.net</a>
+			</li>
+		</ul>
 
-		
+		<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.5538792846738!2d120.65699769580544!3d24.234239857718375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917c1b9d9c369%3A0xb30afdabe4c6e9cf!2zNDI45Y-w5Lit5biC5aSn6ZuF5Y2A56We5p6X6Lev5LiA5q61MTcw5be3MzjomZ8!5e0!3m2!1szh-TW!2stw!4v1611293434206!5m2!1szh-TW!2stw" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 	</div>
 
 	<%- include('component/footer.ejs') %>
