@@ -14739,7 +14739,7 @@ a {
 ul {
   margin-bottom: 0; }
 
-.navbar .nav-link {
+.nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14749,8 +14749,12 @@ ul {
   font-weight: bold;
   padding-bottom: 2px;
   border-bottom: 6px solid transparent; }
-  .navbar .nav-link:hover {
+  .nav-link:hover {
     border-color: #E70012; }
+
+.navbar-brand img {
+  width: 48px;
+  height: 48px; }
 
 .active-color-primary {
   color: #E70012 !important; }
@@ -14828,6 +14832,9 @@ ul {
 
 .bg-transparent-75 {
   background: rgba(255, 255, 255, 0.75); }
+
+.bg-transparent-90 {
+  background: rgba(255, 255, 255, 0.9); }
 
 .border-thick {
   border-width: 3px !important; }
@@ -16163,7 +16170,7 @@ a.text-white:hover, a.text-white:focus {
 .text-shadow {
   text-shadow: black 0.1em 0.1em 0.2em; }
 
-.intro {
+.features {
   height: calc( 100vh - 64px);
   background-image: url("../images/tool-2.jpg"); }
 
@@ -16172,5 +16179,8 @@ a.text-white:hover, a.text-white:focus {
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover; }
+
+.introduction {
+  background-image: url("../images/factory-1_1.jpg"); }
 
 /*# sourceMappingURL=all.css.map */

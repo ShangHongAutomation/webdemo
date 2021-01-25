@@ -14,11 +14,11 @@
 
 <body>
 	
-	<nav class="navbar navbar-expand-md navbar-light sticky-top bg-white bg-transparent-50 shadow">
+	<nav class="navbar navbar-expand-md navbar-light sticky-top bg-transparent-90 shadow">
     <div class="container">
         <h1>
             <a class="navbar-brand d-flex align-items-center fz-8 font-weight-bold" href="index.html">
-                <img class="mr-2" src="assets/images/logo.svg" alt="尚紘自動化" style="width: 48px; height: 48px;">
+                <img class="mr-2" src="assets/images/logo.svg" alt="尚紘自動化">
                 尚紘自動化
             </a>
         </h1>
@@ -28,16 +28,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto fz-6">
                 <li class="nav-item ml-4">
-                    <a class="nav-link" href="#">首頁</a>
+                    <a class="nav-link" href="index.html">首頁</a>
                 </li>
                 <li class="nav-item ml-4">
-                    <a class="nav-link" href="#">關於尚紘</a>
+                    <a class="nav-link" href="introduction.html">關於尚紘</a>
                 </li>
                 <li class="nav-item ml-4">
-                    <a class="nav-link" href="#contact">產品</a>
+                    <a class="nav-link" href="products.html">產品</a>
                 </li>
                 <li class="nav-item ml-4">
-                    <a class="nav-link" href="#contact">聯絡資訊</a>
+                    <a class="nav-link" href="contact.html">聯絡資訊</a>
                 </li>
             </ul>
         </div>
@@ -46,7 +46,7 @@
 </nav>
 
 
-	<div class="intro bg-full py-20">
+	<div class="features bg-full py-20">
 		<div class="container h-100 d-flex flex-column justify-content-end align-items-center align-items-md-end">
 			<h2 class="text-white fz-18 font-weight-bold">標題</h2>
 			<p class="text-white fz-10 mb-10">副標題</p>
@@ -59,7 +59,7 @@
 		</div>
 	</div>
 
-	<div class="product bg-full py-20">
+	<div class="product bg-full py-20" id="product">
 		<div class="container d-flex flex-column">
 			<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">產品分類</h2>
 			<ul class="list-unstyled row text-center mb-10">
@@ -111,15 +111,21 @@
 		</div>
 	</div>
 
-	<div class="container py-20 d-flex flex-column">
-		<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">公司簡介</h2>
-		<p class="fz-7">
-			尚紘於2011年成立企業社,主要生產各式冶具及客製生產單機設備,因應產業技術的提升及參數化省力化的製程,於2016年改制為尚紘自動化有限公司。
-		</p>
-		<a href="#" class="btn btn-primary px-4 py-3 fz-5 align-self-end">查看更多</a>
+	<div class="introduction container py-20 bg-full text-white" id="introduction">
+		<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-white">公司簡介</h2>
+		<div class="px-10 d-flex flex-column">
+			<p class="fz-6">
+				尚紘於2011年成立企業社,主要生產各式冶具及客製生產單機設備,因應產業技術的提升及參數化省力化的製程,於2016年改制為尚紘自動化有限公司。
+			</p>
+			<a href="#" class="btn btn-primary px-4 py-3 fz-5 d-flex align-items-center align-self-end">
+				查看更多
+				<span class="material-icons">chevron_right</span>
+			</a>
+		</div>
+
 	</div>
 
-	<div class="container py-10" id="contact">
+	<div class="container py-20" id="contact">
 		<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">聯絡資訊</h2>
 		<ul class="list-unstyled row fz-5 text-center">
 			<li class="col-sm-6 col-xl-4 mb-4 mb-lg-2 py-4">
