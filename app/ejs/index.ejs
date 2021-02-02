@@ -1,216 +1,149 @@
 <!DOCTYPE html>
 <html lang="zh-Hans-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%- title %></title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title><%- title %></title>
 
-    <!-- Material Icon -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/style/all.css" />
-  </head>
+	<!-- Material Icon -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/style/all.css">
+</head>
 
-  <body>
-    <%- include('component/header.ejs') %>
+<body>
+	
+	<%- include('component/header.ejs') %>
 
-    <div class="features bg-full py-10">
-      <div
-        class="container h-100 d-flex flex-column justify-content-end align-items-center align-items-md-end"
-      >
-        <h2 class="text-white fz-18 font-weight-bold">標題</h2>
-        <p class="text-white fz-10 mb-10">副標題</p>
-        <ul
-          class="list-unstyled text-center text-white font-weight-bold fz-6 w-100 d-md-flex justify-content-between"
-        >
-          <li
-            class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-25"
-            data-aos="fade-right"
-          >
-            客製化設備
-          </li>
-          <li
-            class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-20"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            產線規劃
-          </li>
-          <li
-            class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-20"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
-            各式冶具
-          </li>
-          <li
-            class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-20"
-            data-aos="fade-right"
-            data-aos-delay="900"
-          >
-            設計製造
-          </li>
-        </ul>
-      </div>
-    </div>
+	<div class="intro bg-full py-20">
+		<div class="container h-100 d-flex flex-column justify-content-end align-items-center align-items-md-end">
+			<h2 class="text-white fz-18 font-weight-bold">標題</h2>
+			<p class="text-white fz-10 mb-10">副標題</p>
+			<ul class="list-unstyled text-center text-white font-weight-bold fz-6 w-100 d-md-flex justify-content-between">
+				<li class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-25">客製化設備</li>
+				<li class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-20">產線規劃</li>
+				<li class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-20">各式冶具</li>
+				<li class="border border-rough border-white border-shadow rounded-pill text-shadow px-2 py-3 mb-3 w-md-20">設計製造</li>
+			</ul>
+		</div>
+	</div>
 
-    <div class="product bg-full py-20" id="product">
-      <div class="container d-flex flex-column">
-        <h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">產品分類</h2>
-        <ul class="list-unstyled row text-center mb-10">
-          <% for (var i =0; i <= 5; i++ ) { %>
-          <li class="col-md-6 col-lg-4 mb-4">
-            <a href="#" class="h-100">
-              <img
-                src="assets/images/products/product-<%= product_image_number[i] %>.png"
-                alt="<%= product_image_title[i] %>"
-                class="product-img mb-2"
-              />
-              <h3 class="fz-5 font-weight-bold">
-                <%= product_image_title[i] %>
-              </h3>
-            </a>
-          </li>
-          <% } %>
-        </ul>
-        <a
-          href="product.html"
-          class="btn btn-primary fz-5 px-4 py-3 ml-auto align-self-end"
-          >查看更多</a
-        >
-      </div>
-    </div>
+	<div class="product bg-full py-20">
+		<div class="container d-flex flex-column">
+			<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">產品分類</h2>
+			<ul class="list-unstyled row text-center mb-10">
+				<% for (var i =0; i <= 5; i++ ) { %>
+					<li class="col-md-6 col-lg-4 mb-4">
+						<a href="#" class="h-100">
+							<img src="assets/images/products/product-<%= product_image_number[i] %>.png" alt="<%= product_image_title[i] %>" class="product-img mb-2">
+							<h3 class="fz-5 font-weight-bold"><%= product_image_title[i] %></h3>
+						</a>
+					</li>
+				<% } %>
+			</ul>
+			<a href="product.html" class="btn btn-primary fz-5 px-4 py-3 ml-auto align-self-end">查看更多</a>
+		</div>
+	</div>
 
-    <div class="container">
-		<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">關於尚紘</h2>
+	<div class="container">
+		<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">公司簡介</h2>
 		<div class="main-timeline">
+			<!-- start experience section-->
 			<div class="timeline">
 				<div class="icon"></div>
 				<div class="date-content">
 					<div class="date-outer">
 						<span class="date">
+							<span class="month">2 Years</span>
 							<span class="year">2011</span>
 						</span>
 					</div>
 				</div>
 				<div class="timeline-content">
-					<h5 class="title">成立尚紘企業社</h5>
+					<h5 class="title">成立企業社</h5>
 					<p class="description">
-						尚紘於2011年成立企業社,主要生產各式治具及客製生產單機設備。
+						尚紘於2011年成立企業社,主要生產各式冶具及客製生產單機設備。
 					</p>
 				</div>
 			</div>
+			<!-- end experience section-->
+
+			<!-- start experience section-->
 			<div class="timeline">
 				<div class="icon"></div>
 				<div class="date-content">
 					<div class="date-outer">
 						<span class="date">
-							<span class="year">2016</span>
-							<!-- <span class="month">2 Years</span> -->
+								<span class="month">1 Years</span>
+						<span class="year">2016</span>
 						</span>
 					</div>
 				</div>
 				<div class="timeline-content">
 					<h5 class="title">改制為尚紘自動化有限公司</h5>
 					<p class="description">
-						於2016年改制為尚統自動化有限公司,係專業生產客製化自動化設備之製造商,並陸續研發出多種自動化生產及製程應用設備,提供最好的品質與完善的售後服務。
+						因應產業技術的提升及參數化省力化的製程,於2016年改制為尚紘自動化有限公司,能更完善服務客戶整合生產線。
 					</p>
 				</div>
 			</div>
-		</div>
-    </div>
+			<!-- end experience section-->
+</div>
+	</div>
 
-    <div class="container py-20" id="contact">
-      <h2
-        class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black"
-      >
-        聯絡資訊
-      </h2>
-      <ul class="list-unstyled row fz-5 text-center">
-        <li class="col-sm-6 col-xl-4 mb-4 mb-lg-2 py-4">
-          <h3
-            class="d-flex justify-content-center align-items-center fz-5 mb-4 font-weight-bold"
-          >
-            <span class="material-icons mr-2">place</span>
-            地址
-          </h3>
-          <address class="mb-0">台中市大雅區神林路一段38-3號</address>
-        </li>
-        <li class="col-sm-6 col-xl-2 mb-4 mb-lg-2 py-4">
-          <h3
-            class="d-flex justify-content-center align-items-center fz-5 mb-4 font-weight-bold"
-          >
-            <span class="material-icons mr-2">phone</span>
-            電話
-          </h3>
-          <a href="tel:+886-4-25603957">04-25603957</a>
-        </li>
-        <li class="col-sm-6 col-xl-2 mb-4 mb-lg-2 py-4">
-          <h3
-            class="d-flex justify-content-center align-items-center fz-5 mb-4 font-weight-bold"
-          >
-            <span class="material-icons mr-2">print</span>
-            傳真
-          </h3>
-          <a href="tel:+886-4-25603957">04-25603957</a>
-        </li>
-        <li class="col-sm-6 col-xl-4 mb-4 mb-lg-2 py-4">
-          <h3
-            class="d-flex justify-content-center align-items-center fz-5 mb-4 font-weight-bold"
-          >
-            <span class="material-icons mr-2">mail</span>
-            電子郵件
-          </h3>
-          <a href="mailto:develop.mall@msa.hinet.net"
-            >develop.mall@msa.hinet.net</a
-          >
-        </li>
-      </ul>
+	<div class="container py-10" id="contact">
+		<h2 class="font-weight-bold pb-2 mb-6 text-center border-bottom border-thick border-black">聯絡資訊</h2>
+		<ul class="list-unstyled row fz-5 text-center">
+			<li class="col-sm-6 col-xl-4 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">place</span>
+					地址
+				</h3>
+				<address class="mb-0">台中市大雅區神林路一段38-3號</address>
+			</li>
+			<li class="col-sm-6 col-xl-2 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">phone</span>
+					電話
+				</h3>
+				<a href="tel:+886-4-25603957">04-25603957</a>
+			</li>
+			<li class="col-sm-6 col-xl-2 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">print</span>
+					傳真
+				</h3>
+				<a href="tel:+886-4-25603957">04-25603957</a>
+			</li>
+			<li class="col-sm-6 col-xl-4 mb-4 mb-lg-2 py-4">
+				<h3 class="d-flex justify-content-center  align-items-center fz-5 mb-4 font-weight-bold">
+					<span class="material-icons mr-2">mail</span>
+					電子郵件
+				</h3>
+				<a href="mailto:develop.mall@msa.hinet.net">develop.mall@msa.hinet.net</a>
+			</li>
+		</ul>
 
-      <iframe
-        class="w-100"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.5538792846738!2d120.65699769580544!3d24.234239857718375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917c1b9d9c369%3A0xb30afdabe4c6e9cf!2zNDI45Y-w5Lit5biC5aSn6ZuF5Y2A56We5p6X6Lev5LiA5q61MTcw5be3MzjomZ8!5e0!3m2!1szh-TW!2stw!4v1611293434206!5m2!1szh-TW!2stw"
-        height="400"
-        frameborder="0"
-        style="border: 0"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
-    </div>
+		<iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.5538792846738!2d120.65699769580544!3d24.234239857718375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346917c1b9d9c369%3A0xb30afdabe4c6e9cf!2zNDI45Y-w5Lit5biC5aSn6ZuF5Y2A56We5p6X6Lev5LiA5q61MTcw5be3MzjomZ8!5e0!3m2!1szh-TW!2stw!4v1611293434206!5m2!1szh-TW!2stw" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
 
-    <%- include('component/footer.ejs') %>
+	<%- include('component/footer.ejs') %>
 
-    <!-- Bootstrap required JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Bootstrap required JS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	<!-- AOS Required JS & Initialize -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	
+	<!-- Custom JS -->
+	<script src="./assets/js/vendors.js"></script>
+	<script src="./assets/js/all.js"></script>
+</body>
 
-    <!-- AOS Required JS & Initialize -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-    <!-- Custom JS -->
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
 </html>
